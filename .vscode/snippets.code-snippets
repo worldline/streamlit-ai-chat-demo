@@ -32,12 +32,13 @@
     "body": [
       "llm = ChatGoogleGenerativeAI(model=\"gemini-2.0-flash-lite\", api_key=api_key)",
       "system_message = (",
-      "\"system\", \"You are an expert at explaining programming languages' concepts.\""
+      "\"system\", \"You are an expert at explaining programming languages' concepts.\")"
     ]
   },
   "setup form": {
     "prefix": "05-setup-form",
     "body": [
+      "st.title(\"AI Coding coach\")",
       "with st.form(\"my_form\"):",
       "    text = st.text_area(\"Prompt:\")",
       "    submitted = st.form_submit_button(\"Submit\")"
